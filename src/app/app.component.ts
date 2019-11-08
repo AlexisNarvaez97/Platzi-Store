@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'platzi-store';
+
+  power = 10;
 
   products: Product[] = [
     {

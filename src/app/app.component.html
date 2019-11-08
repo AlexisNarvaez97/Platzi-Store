@@ -1,5 +1,10 @@
 <input type="text" name="title" [(ngModel)]="title" />
 
+<input type="text" [(ngModel)]="power"/>
+
+{{ power | exponencial }}
+
+
 <div class="product-grid">
   <app-product
     *ngFor="let product of products"
