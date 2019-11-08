@@ -1,4 +1,10 @@
-.image {
-    height: 100px;
-    width: 100px;
+:host {
+    margin: 2px;
+    border-radius: 5px;
+    display: block;
+    border: 1px solid black;
+}
+
+img {
+    max-width: 100%;
 }

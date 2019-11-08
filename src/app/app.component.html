@@ -1,10 +1,11 @@
+<input type="text" name="title" [(ngModel)]="title" />
 
-
-<input type="text" name="title" [(ngModel)]="title" >
-
-
-<div *ngFor="let product of products">
-  <app-product (productCliked)="clickProduct($event)" [product]="product"></app-product>
+<div class="product-grid">
+  <app-product
+    *ngFor="let product of products"
+    (productCliked)="clickProduct($event)"
+    [product]="product"
+  ></app-product>
 </div>
 
 {{ title }}
